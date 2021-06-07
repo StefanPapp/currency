@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: currencyconverter
+spec:
+  restartPolicy: Never
+  containers:
+  - name: currency
+    image: stefanpapp/currencyconverter
+    command: ["python", "-m", "currency_converter_service", "-i", "EUR", "-o", "USD", "-a", "1"]
