@@ -7,4 +7,9 @@ docker run stefanpapp/currencyconverter:latest python -m currency_converter -i E
 
 
 # Distribute
-docker push stefanpapp/currencyconverter
+docker push stefanpapp/currencyconverter\
+
+
+# Did you know
+You can scan the vulnerabilities of that specific container?
+docker scan stefanpapp/currencyconverter

@@ -1,6 +1,16 @@
 # minikube
-minikube start
+For this sample, we assume minikube is installed and started
 
-# show
-k apply -f currencyconverter
+`minikube start`
+
+# Kubernetes
+view the currencyconverter.yaml
+
+# Demo
+```
+k apply -f hello_world.yaml
+k logs hello_world
+k apply -f currencyconverter.yaml
 k logs currencyconverter
+```
+
