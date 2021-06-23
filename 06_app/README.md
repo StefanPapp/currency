@@ -17,11 +17,8 @@ Setting up local Kubernetes with minikube focusing on easy learning and develop 
 
 
 ### Quick Start
-    
-   1. git clone https://github.com/ashkanzng/kubernetes_cluster_tutorial.git
-   2. cd kubernetes_cluster_tutorial/
-   3. minikube start deriver=docker #here there is a type driver
-   4. docker build -t [image_name] . 
+   
+   4. docker build . -t stefanpapp/springboot 
    5. nohub kubectl proxy &
    6. (Creating Service Account) kubectl apply -f dashboard-admin.yaml
    7. kubectl apply -f deployment.yml
